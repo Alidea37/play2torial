@@ -1,0 +1,21 @@
+@(message: String)
+@main("Welcome to Play 2.3") {
+
+<body>
+
+<div class="container">
+			<div class="button">
+		 		<a href="@routes.Application.page1" class="btn btn-default">Start Over</a>
+			</div>
+
+<h1>You Look Around</h1>
+<article>
+<p>You scour the area but do not see anything suspicious.</p>
+<p>The creature seems to have been scared off as well . . . for the moment</P>
+<p>Do you want to give up and <a href="@routes.Application.page7" class="btn btn-default">Return to Camp</a></p>
+<p>Or are you still determined to <a href="@routes.Application.page9" class="btn btn-default">Follow the tracks?</a></p>
+
+</article>
+</div>
+	</body>
+}

@@ -65,7 +65,7 @@ public class TaskPersistenceServiceTest extends AbstractTransactionalJUnit4Sprin
     	             }
     	         }
     	         
-    	             @Test
+    	             @Test	//Saves previous tasks in a list above input box
     	             public void saveExistingTaskTest() {
     	                 final Task t = new Task();
     	                 t.setContents("contents");

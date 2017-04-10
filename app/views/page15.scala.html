@@ -1,0 +1,35 @@
+@(message: String)
+@main("Welcome to Play 2.3") {
+
+<body>
+<div class="container">
+			<div class="button">
+		 		<a href="@routes.Application.page1" class="btn btn-default">Start Over</a>
+			</div>
+
+<h1>At Long Last . . .</h1>
+<article>
+<p>High on the rise appears the creature that you have been seeking. </p>
+<p>Trying to be stealthy you reach into your pocket for your phone to capture a picture of this miraculous beast.</p>
+<p>Just as you tap the shutter button the Bigfoot turns and bolts for the cover of the underbrush.</p>
+<p>You look at the screen to see the resulting photo but instead you are greeted by the low battery signal.</p>
+<p>You won’t know if the picture turned out until you find the nearest phone charger.</p>
+<p>Two hours later you are at last able to turn on your phone and scroll to the photo album.</p>
+<p>And there it is, a mildly blurry photo of . . . something</p>
+<p> - and what are those fuzzy pink objects on it’s feet?</p>
+<p>This is the end of the game for you my friend. You have successfully found Bigfoot and survived!</p>
+<p>Now go tell the rest of the world about your discovery!</p>
+
+<p>Do you want to <a href="@routes.Application.page1" class="btn btn-default"> ---> Restart Adventure</a></p>
+
+<p>Or would you rather <a href="@routes.Application.index" class="btn btn-default"> Return to Home Page</a></p>
+
+</article>
+
+<div class="image">
+	<img src='@routes.Assets.at("images/Bigfoot.jpg")' alt="Bigfoot">
+</div>
+
+</div>
+	</body>
+}

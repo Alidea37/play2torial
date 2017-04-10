@@ -1,4 +1,24 @@
 @(message: String)
 @main("Welcome to Play 2.3") {
-This is a page
+
+<body>
+
+<div class="container">
+			<div class="button">
+		 		<a href="@routes.Application.page1" class="btn btn-default">Start Over</a>
+			</div>
+
+<h1>You are the world's best tracker for a reason, darn it!</h1>
+<article>
+<p>You spot the tracks easily and are soon neck deep in the vegetation as you follow them.</p>
+<p>You believe you should reach the creature making these tracks by nightfall and are so fixated by this goal</p>
+<p>that you almost don't hear the sound of something following you.</p>
+<p>Should you <a href="@routes.Application.page4" class="btn btn-default">stop, look around, and find the source of noise.</a> </p>
+<p>Or is this the sound of something horrible and therefore you should <a href="@routes.Application.page5" class="btn btn-default">run for it.</a></p>
+<p> . . . </p>
+<p>You should decide soon because it sounds like the footsteps are getting closer</p>
+</article>
+
+</div>
+	</body>
 }

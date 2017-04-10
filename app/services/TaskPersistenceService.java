@@ -5,9 +5,6 @@ import jpa.Task1;
 import java.util.List;
 
 
-
-
-
 public interface TaskPersistenceService {
     void saveTask(Task1 t);
 

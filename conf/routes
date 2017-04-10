@@ -10,5 +10,19 @@ GET     /tasks                      @controllers.Application.getTasks()
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
+GET     /page1                           @controllers.Application.page1()
 GET     /page2                           @controllers.Application.page2()
+GET     /page3                           @controllers.Application.page3()
+GET     /page4                           @controllers.Application.page4()
+GET     /page5                           @controllers.Application.page5()
+GET     /page6                           @controllers.Application.page6()
+GET     /page7                           @controllers.Application.page7()
+GET     /page9                           @controllers.Application.page9()
+GET     /page10                           @controllers.Application.page10()
+GET     /page11                           @controllers.Application.page11()
+GET     /page12                           @controllers.Application.page12()
+GET     /page15                           @controllers.Application.page15()
+GET     /page16                           @controllers.Application.page16()
+
+
 

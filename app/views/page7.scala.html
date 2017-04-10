@@ -1,0 +1,31 @@
+@(message: String)
+@main("Welcome to Play 2.3") {
+
+<body>
+<div class="container">
+			<div class="button">
+		 		<a href="@routes.Application.page1" class="btn btn-default">Start Over</a>
+			</div>
+
+<h1>You decide to call it a day.</h1>
+<article>
+<p>You return to camp only to find everything ransacked.</p>
+<p>Seriously, it looks like an elephant came in and kicked everything followed by a rave of badgers.</p>
+<p>You spend the remainder of the day trying to put everything back in order and spend the following night.</p>
+<p> looking at the stars through the massive hole in the roof of your tent.</p>
+<p>During this time, you reflect on your life choices up until this moment.</p>
+<p>I mean, you just graduated from law school last year, shouldn’t you be taking advantage of that?</p>
+<p>But then again, the woods are a nice place to get away from the obligations of society. </p>
+<p>And who knows? Maybe if you do find Bigfoot you will become famous.</p>
+
+<p>Do you want to <a href="@routes.Application.page11" class="btn btn-default">Continue your investigation of finding Bigfoot</a></p>
+<p>Or are you ready to go home and <a href="@routes.Application.page12" class="btn btn-default">become the outstanding member of society </a> that you were meant to be.</p>
+</article>
+
+<div class="image">
+	<img src='@routes.Assets.at("images/WreckedTent.jpg")' alt="Tent">
+</div>
+
+</div>
+	</body>
+}

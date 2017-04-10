@@ -1,0 +1,24 @@
+@(message: String)
+@main("Welcome to Play 2.3") {
+
+<body>
+
+<div class="container">
+			<div class="button">
+		 		<a href="@routes.Application.page1" class="btn btn-default">Start Over</a>
+			</div>
+
+<h1>You Choose to Wing It</h1>
+<article>
+<p>With an estimated guess you head off on the path in front of you,</p>
+<p>After walking for several hours you realize that you are on the wrong path.</p>
+<p>And worse yet, you hear footsteps from somewhere and they are following you.</p>
+<p>Do you want to <a href="@routes.Application.page4" class="btn btn-default">Try to find the source of the noise</a></p>
+<p>Or perhaps you are confident enough to <a href="@routes.Application.page6" class="btn btn-default">Ignore the footsteps following you and keep following the trail.</a></p>
+<p>Or would you prefer to <a href="@routes.Application.page5" class="btn btn-default">Run away - NOW!</a></p>
+<p>Hold on a minute, maybe the best option is to <a href="@routes.Application.page7" class="btn btn-default">Attempt to return to base camp.</a></p>
+</article>
+
+</div>
+	</body>
+}

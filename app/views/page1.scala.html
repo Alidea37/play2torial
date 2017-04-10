@@ -1,0 +1,27 @@
+@(message: String)
+@main("Welcome to Play 2.3") {
+
+<body>
+<div class="container">
+<a href="@routes.Application.index" class="btn btn-default">Main Page</a>
+<h1>Finding BigFoot</h1>
+
+<article>
+
+<p>You are the world's greatest tracker,</p> 
+<p>and this week you have decided to take up the task of finding Bigfoot.</p> 
+<p>You set up your campsite near the foot of the Misty Mountains and are 
+<p>now ready to set out on foot to track this mythic menace.</p>
+<p>What is your first plan of action?</p>
+
+<div class="button">
+			<a href="@routes.Application.page2" class="btn btn-default">Take a careful look around to find bigfoot’s tracks</a>
+			<a href="@routes.Application.page3" class="btn btn-default">Just wing it</a>
+			</div>
+</article>
+
+</div>
+
+</body>
+
+}

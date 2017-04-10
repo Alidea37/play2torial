@@ -26,13 +26,13 @@
 * If you are interested in mocking a whole application, see the wiki for more details.
 *
 */
-//public class ApplicationTest {
-//
-//    @Test
-//    public void simpleCheck() {
-//        int a = 1 + 1;
-//        assertThat(a).isEqualTo(2);
-//    }
+public class ApplicationTest {
+
+    @Test
+    public void simpleCheck() {
+        int a = 1 + 1;
+        assertThat(a).isEqualTo(2);
+    }
 //
 //    @Test
 //    public void renderTemplate() {
@@ -52,4 +52,4 @@
 //    }
 //
 //   
-//}
+    }

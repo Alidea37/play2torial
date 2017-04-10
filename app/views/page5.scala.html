@@ -1,0 +1,25 @@
+@(message: String)
+@main("Welcome to Play 2.3") {
+
+<body>
+
+<div class="container">
+			<div class="button">
+		 		<a href="@routes.Application.page1" class="btn btn-default">Start Over</a>
+			</div>
+
+<h1>You are Running Away</h1>
+<article>
+<p>Trying to run away from the thing seems to be a bad idea,</p>
+<p>it easily catches up to you and the last thing you hear</p>
+<p>before darkness takes your senses is that terrible not quite human shriek.</p>
+<p>This is the end of the game for you my friend. I am afraid you have died.</p>
+<a href="@routes.Application.page1" class="btn btn-default">---> Restart Adventure</a>
+</article>
+
+<div class="image">
+	<img src='@routes.Assets.at("images/Chase.jpg")' alt="Chase">
+</div>
+</div>
+	</body>
+}
