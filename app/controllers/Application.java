@@ -36,15 +36,16 @@ public class Application extends Controller {
     @Inject
     private TaskPersistenceService taskPersist;
 
-    public Result index() {
+    public Result index() {	//Main Page
         return ok(index.render("Home Page", Form.form(TaskForm.class)));
     }
 
-    public Result addTask() {
+  //Create list for user input, throw error exception
+    public Result addTask() {	 
         Form<TaskForm> form = Form.form(TaskForm.class).bindFromRequest();
         if (form.hasErrors()) {
         	log.warn("form has errors"); // if form has errors
-        	return badRequest(index.render("hello, world", form));
+        	return badRequest(index.render("Home Page", form));
         }
 
         Task1 task = new Task1();

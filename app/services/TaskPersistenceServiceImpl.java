@@ -1,12 +1,10 @@
+//Assistance from Subin
 package services;
 
 
 import java.util.List;
 
 import jpa.Task1;
-
-
-
 import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -14,13 +12,16 @@ import javax.transaction.Transactional;
 
 @Named
 public class TaskPersistenceServiceImpl implements TaskPersistenceService {
-
+	
     @PersistenceContext
     private EntityManager em;
 
     @Transactional
     @Override
     public void saveTask(Task1 task) {
+    	if (task == null) {
+            throw new IllegalArgumentException("Task must not be null");
+    	}
         if (task.getContents() == null) {
             throw new IllegalArgumentException("Contents must not be blank");
         }
